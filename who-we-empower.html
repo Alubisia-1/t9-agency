@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who We Empower</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .space-grotesk { font-family: 'Space Grotesk', sans-serif; }
+        .inter { font-family: 'Inter', sans-serif; }
+
+        .card {
+            transition: all 0.3s ease;
+        }
+
+        .card-tech:hover {
+            border-color: #ef4444;
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .card-ecommerce:hover {
+            border-color: #14b8a6;
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .card-creative:hover {
+            border-color: #3b82f6;
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .card-sme:hover {
+            border-color: #eab308;
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-teal-50 min-h-screen py-16 px-8">
+    <div class="max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="space-grotesk text-5xl font-bold text-gray-900 mb-4">Who We Empower</h2>
+            <p class="inter text-xl text-gray-600 max-w-2xl mx-auto">
+                Delivering tailored solutions for businesses at every stage of growth
+            </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Tech Startups Card -->
+            <div class="card card-tech bg-white border-2 border-gray-200 rounded-2xl p-6">
+                <div class="bg-gradient-to-br from-red-500 to-red-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                </div>
+                <h3 class="space-grotesk text-2xl font-bold text-gray-900 mb-3">Tech Startups</h3>
+                <p class="inter text-gray-600 leading-relaxed">
+                    Scale rapidly with agile marketing strategies designed for fast-moving tech innovators breaking into competitive markets.
+                </p>
+            </div>
+
+            <!-- E-commerce Card -->
+            <div class="card card-ecommerce bg-white border-2 border-gray-200 rounded-2xl p-6">
+                <div class="bg-gradient-to-br from-teal-500 to-teal-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <h3 class="space-grotesk text-2xl font-bold text-gray-900 mb-3">E-commerce</h3>
+                <p class="inter text-gray-600 leading-relaxed">
+                    Drive conversions and customer loyalty with data-driven campaigns optimized for online retail success.
+                </p>
+            </div>
+
+            <!-- Creative Industries Card -->
+            <div class="card card-creative bg-white border-2 border-gray-200 rounded-2xl p-6">
+                <div class="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                        <path d="M5 3v4"></path>
+                        <path d="M19 17v4"></path>
+                        <path d="M3 5h4"></path>
+                        <path d="M17 19h4"></path>
+                    </svg>
+                </div>
+                <h3 class="space-grotesk text-2xl font-bold text-gray-900 mb-3">Creative Industries</h3>
+                <p class="inter text-gray-600 leading-relaxed">
+                    Amplify your artistic vision with campaigns that showcase creativity while building sustainable audiences.
+                </p>
+            </div>
+
+            <!-- SMEs Card -->
+            <div class="card card-sme bg-white border-2 border-gray-200 rounded-2xl p-6">
+                <div class="bg-gradient-to-br from-yellow-500 to-yellow-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                        <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                        <path d="M15 2v2"></path>
+                        <path d="M15 20v2"></path>
+                        <path d="M2 15h2"></path>
+                        <path d="M2 9h2"></path>
+                        <path d="M20 15h2"></path>
+                        <path d="M20 9h2"></path>
+                        <path d="M9 2v2"></path>
+                        <path d="M9 20v2"></path>
+                    </svg>
+                </div>
+                <h3 class="space-grotesk text-2xl font-bold text-gray-900 mb-3">SMEs</h3>
+                <p class="inter text-gray-600 leading-relaxed">
+                    Compete with enterprise-level marketing power through smart automation and strategic resource allocation.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

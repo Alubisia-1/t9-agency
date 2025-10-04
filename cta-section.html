@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTA Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .space-grotesk { font-family: 'Space Grotesk', sans-serif; }
+
+        .gradient-red-orange {
+            background: linear-gradient(to right, #ef4444, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-teal-blue {
+            background: linear-gradient(to right, #14b8a6, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-800 to-slate-900 min-h-screen flex items-center justify-center p-8">
+    <div class="max-w-5xl mx-auto text-center">
+        <!-- Headline -->
+        <h1 class="space-grotesk text-7xl md:text-8xl font-bold mb-12 leading-tight">
+            <span class="gradient-red-orange">Ready to</span>
+            <br>
+            <span class="gradient-teal-blue">Transform</span><span class="text-yellow-400">?</span>
+        </h1>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <button class="space-grotesk bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-2xl hover:shadow-red-500/50 transition-all duration-300 hover:scale-105">
+                Get Free Strategy Consultation
+            </button>
+
+            <button class="space-grotesk border-2 border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-105">
+                See What's Possible with T9
+            </button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,411 @@
+/* ========================================
+   CSS ANIMATIONS & TRANSITIONS
+   ======================================== */
+
+/* Fade-in Animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fade-in 0.8s ease-out;
+}
+
+/* Slow Spin Animation */
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-slow {
+    animation: spin-slow 8s linear infinite;
+}
+
+/* ========================================
+   HOVER TRANSITIONS
+   ======================================== */
+
+/* Default transition for all interactive elements */
+a, button, input, textarea, select, [role="button"] {
+    transition: all 300ms ease;
+}
+
+/* ========================================
+   BUTTON EFFECTS
+   ======================================== */
+
+/* Base button styles with transitions */
+button {
+    transition: all 300ms ease;
+}
+
+/* Scale effect on hover */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Active state for buttons */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Button shadow effects */
+.button-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 300ms ease;
+}
+
+.button-shadow:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Red button specific shadow */
+.button-red-shadow {
+    box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.3), 0 2px 4px -1px rgba(239, 68, 68, 0.2);
+    transition: all 300ms ease;
+}
+
+.button-red-shadow:hover {
+    box-shadow: 0 20px 25px -5px rgba(239, 68, 68, 0.4), 0 10px 10px -5px rgba(239, 68, 68, 0.3);
+    transform: scale(1.05);
+}
+
+/* Teal button specific shadow */
+.button-teal-shadow {
+    box-shadow: 0 4px 6px -1px rgba(20, 184, 166, 0.3), 0 2px 4px -1px rgba(20, 184, 166, 0.2);
+    transition: all 300ms ease;
+}
+
+.button-teal-shadow:hover {
+    box-shadow: 0 20px 25px -5px rgba(20, 184, 166, 0.4), 0 10px 10px -5px rgba(20, 184, 166, 0.3);
+    transform: scale(1.05);
+}
+
+/* Blue button specific shadow */
+.button-blue-shadow {
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3), 0 2px 4px -1px rgba(59, 130, 246, 0.2);
+    transition: all 300ms ease;
+}
+
+.button-blue-shadow:hover {
+    box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.4), 0 10px 10px -5px rgba(59, 130, 246, 0.3);
+    transform: scale(1.05);
+}
+
+/* ========================================
+   SMOOTH COLOR TRANSITIONS
+   ======================================== */
+
+/* Text color transitions */
+* {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: ease;
+    transition-duration: 300ms;
+}
+
+/* Specific color transition classes */
+.color-transition {
+    transition: color 300ms ease;
+}
+
+.bg-transition {
+    transition: background-color 300ms ease;
+}
+
+.border-transition {
+    transition: border-color 300ms ease;
+}
+
+.all-transition {
+    transition: all 300ms ease;
+}
+
+/* ========================================
+   CARD TRANSITIONS
+   ======================================== */
+
+.card-transition {
+    transition: all 300ms ease;
+}
+
+.card-transition:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* ========================================
+   LINK TRANSITIONS
+   ======================================== */
+
+a {
+    transition: all 300ms ease;
+}
+
+/* Underline animation for links */
+.link-underline {
+    position: relative;
+    text-decoration: none;
+}
+
+.link-underline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 300ms ease;
+}
+
+.link-underline:hover::after {
+    width: 100%;
+}
+
+/* ========================================
+   INPUT TRANSITIONS
+   ======================================== */
+
+input, textarea, select {
+    transition: all 300ms ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    transform: scale(1.01);
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+}
+
+/* ========================================
+   ICON TRANSITIONS
+   ======================================== */
+
+.icon-transition {
+    transition: transform 300ms ease;
+}
+
+.icon-transition:hover {
+    transform: rotate(12deg);
+}
+
+/* Icon scale on hover */
+.icon-scale:hover {
+    transform: scale(1.1);
+}
+
+/* Icon bounce on hover */
+@keyframes bounce-subtle {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+.icon-bounce:hover {
+    animation: bounce-subtle 0.6s ease;
+}
+
+/* ========================================
+   GRADIENT TRANSITIONS
+   ======================================== */
+
+.gradient-transition {
+    background-size: 200% 200%;
+    transition: background-position 300ms ease;
+}
+
+.gradient-transition:hover {
+    background-position: 100% 50%;
+}
+
+/* ========================================
+   OPACITY TRANSITIONS
+   ======================================== */
+
+.opacity-transition {
+    transition: opacity 300ms ease;
+}
+
+.opacity-hover:hover {
+    opacity: 0.8;
+}
+
+/* ========================================
+   TRANSFORM UTILITIES
+   ======================================== */
+
+.scale-transition {
+    transition: transform 300ms ease;
+}
+
+.scale-hover:hover {
+    transform: scale(1.05);
+}
+
+.scale-hover-sm:hover {
+    transform: scale(1.02);
+}
+
+.scale-hover-lg:hover {
+    transform: scale(1.1);
+}
+
+/* Rotate on hover */
+.rotate-hover:hover {
+    transform: rotate(5deg);
+}
+
+/* Translate on hover */
+.translate-hover:hover {
+    transform: translateY(-4px);
+}
+
+/* ========================================
+   PULSE ANIMATION
+   ======================================== */
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+}
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* ========================================
+   GLOW EFFECTS
+   ======================================== */
+
+.glow-red {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+    transition: box-shadow 300ms ease;
+}
+
+.glow-red:hover {
+    box-shadow: 0 0 30px rgba(239, 68, 68, 0.8);
+}
+
+.glow-teal {
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.5);
+    transition: box-shadow 300ms ease;
+}
+
+.glow-teal:hover {
+    box-shadow: 0 0 30px rgba(20, 184, 166, 0.8);
+}
+
+.glow-blue {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    transition: box-shadow 300ms ease;
+}
+
+.glow-blue:hover {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.8);
+}
+
+.glow-yellow {
+    box-shadow: 0 0 20px rgba(234, 179, 8, 0.5);
+    transition: box-shadow 300ms ease;
+}
+
+.glow-yellow:hover {
+    box-shadow: 0 0 30px rgba(234, 179, 8, 0.8);
+}
+
+/* ========================================
+   SLIDE IN ANIMATIONS
+   ======================================== */
+
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-left {
+    animation: slide-in-left 0.8s ease-out;
+}
+
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-right {
+    animation: slide-in-right 0.8s ease-out;
+}
+
+/* ========================================
+   STAGGER ANIMATIONS (for child elements)
+   ======================================== */
+
+.stagger-children > * {
+    animation: fade-in 0.8s ease-out;
+}
+
+.stagger-children > *:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.stagger-children > *:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.stagger-children > *:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.stagger-children > *:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.stagger-children > *:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.stagger-children > *:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
