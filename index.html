@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="T9ONLINE - Where human imagination meets intelligent precision. AI-powered marketing solutions for modern businesses.">
-    <title>T9ONLINE - Transform Your Marketing with AI</title>
+    <meta name="description" content="T9 Marketing - Where human imagination meets intelligent precision. AI-powered marketing solutions for modern businesses.">
+    <title>T9 Business - Transform Your Marketing with AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -164,7 +164,7 @@
             <!-- Logo -->
             <div class="flex items-center gap-2 mb-8 fade-in">
                 <h1 class="space-grotesk text-5xl md:text-7xl font-bold">
-                    <span class="text-coral-red">T</span><span class="text-slate-gray">9</span><span class="text-mint-teal">ONLINE</span>
+                    <span class="text-coral-red">T</span><span class="text-slate-gray">9</span>
                 </h1>
                 <div class="w-4 h-4 rounded-full bg-golden-yellow pulse"></div>
             </div>
@@ -175,18 +175,18 @@
             </p>
 
             <p class="inter text-lg md:text-xl text-slate-600 max-w-3xl mb-12 fade-in" style="animation-delay: 0.4s;">
-                Transform your marketing with AI-powered solutions that blend creativity with data-driven insights.
+                Transform your T9 Business with AI-powered T9 Marketing solutions that blend creativity with data-driven insights.
                 We're not just a marketing agency—we're your innovation partner.
             </p>
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 fade-in" style="animation-delay: 0.6s;">
-                <button class="space-grotesk text-white px-8 py-4 rounded-lg text-lg font-bold shadow-2xl transition-all duration-300 hover:scale-105 border-b-4 border-red-700" style="background: linear-gradient(to bottom, #ff6b6b, #e85a5a);">
+                <a href="#final-cta" class="space-grotesk text-white px-8 py-4 rounded-lg text-lg font-bold shadow-2xl transition-all duration-300 hover:scale-105 border-b-4 border-red-700 text-center" style="background: linear-gradient(to bottom, #ff6b6b, #e85a5a);">
                     Start Your Transformation
-                </button>
-                <button class="space-grotesk border-2 border-mint-teal text-mint-teal hover:bg-mint-teal hover:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-105">
+                </a>
+                <a href="#pillars" class="space-grotesk border-2 border-mint-teal text-mint-teal hover:bg-mint-teal hover:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-105 text-center">
                     Explore Our Solutions
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -253,10 +253,10 @@
     <section id="ai-demo" class="py-32 bg-gradient-to-br from-white via-gray-50 to-gray-100">
         <div class="max-w-6xl mx-auto px-8">
             <h2 class="space-grotesk text-4xl md:text-5xl font-bold text-center text-slate-gray mb-4 fade-in">
-                Experience AI-Powered Campaigns
+                Get free AI-Powered Campaign
             </h2>
             <p class="inter text-xl text-slate-600 text-center mb-12 fade-in" style="animation-delay: 0.1s;">
-                See how our AI generates tailored campaigns in seconds
+                Generate AI tailored campaigns in seconds
             </p>
 
             <!-- Terminal Interface -->
@@ -443,13 +443,13 @@
 
             <!-- Buttons -->
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <button class="space-grotesk text-white px-8 py-4 rounded-lg text-lg font-bold shadow-2xl transition-all duration-300 hover:scale-105 border-b-4 border-red-700" style="background: linear-gradient(to bottom, #ff6b6b, #e85a5a);">
+                <button id="consultationBtn" class="space-grotesk text-white px-8 py-4 rounded-lg text-lg font-bold shadow-2xl transition-all duration-300 hover:scale-105 border-b-4 border-red-700" style="background: linear-gradient(to bottom, #ff6b6b, #e85a5a);">
                     Get Free Strategy Consultation
                 </button>
 
-                <button class="space-grotesk border-2 border-mint-teal text-mint-teal hover:bg-mint-teal hover:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-105">
+                <a href="#ai-demo" class="space-grotesk border-2 border-mint-teal text-mint-teal hover:bg-mint-teal hover:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-105 text-center">
                     See What's Possible with T9
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -461,7 +461,7 @@
             <div class="text-center mb-12">
                 <div class="flex items-center justify-center gap-1 mb-4">
                     <h2 class="space-grotesk text-3xl md:text-4xl font-bold">
-                        <span class="text-coral-red">T</span><span class="text-slate-gray">9</span><span class="text-mint-teal">ONLINE</span>
+                        <span class="text-coral-red">T</span><span class="text-slate-gray">9</span>
                     </h2>
                     <div class="w-3 h-3 rounded-full bg-golden-yellow pulse" aria-hidden="true"></div>
                 </div>
@@ -551,7 +551,7 @@
             <!-- Copyright Notice -->
             <div class="border-t border-gray-300 pt-8 text-center">
                 <p class="inter text-slate-500 text-sm">
-                    &copy; 2025 T9ONLINE. All rights reserved. Built with passion and precision.
+                    &copy; 2025 T9. All rights reserved. Built with passion and precision.
                 </p>
             </div>
         </div>
@@ -665,52 +665,47 @@
         });
 
         // ========================================
-        // AI CAMPAIGN GENERATOR
+        // AI CAMPAIGN GENERATOR - DeepSeek API Integration
         // ========================================
-        function generateAiCampaign(industry) {
-            const campaigns = {
-                coffee: {
-                    tagline: "Brew Your Best Morning",
-                    copy: "Transform every cup into a ritual of excellence. Our AI-powered campaign connects coffee lovers with artisanal experiences that elevate their daily routine from mundane to memorable.",
-                    visual: "Warm, earthy tones with steam rising cinematically from handcrafted ceramic mugs. Showcase the journey from bean to cup through intimate macro photography that captures texture and craftsmanship.",
-                    insight: "Coffee consumers are 73% more likely to engage with content that emphasizes the craft and story behind their brew, rather than just taste or caffeine benefits.",
-                    strategy: "Multi-channel storytelling focusing on Instagram Reels and TikTok for visual storytelling, paired with email sequences that deepen brand loyalty through origin stories and brewing tips."
-                },
-                fashion: {
-                    tagline: "Wear Your Truth",
-                    copy: "Fashion that speaks before you do. Our campaign creates authentic connections between style-forward individuals and pieces that express their unique identity, building a community around self-expression.",
-                    visual: "Bold, high-contrast photography featuring diverse models in urban landscapes. Mix editorial sophistication with street style authenticity, using dynamic angles and unexpected color pops.",
-                    insight: "Gen Z fashion buyers make 68% of purchase decisions based on brand authenticity and alignment with personal values rather than traditional trend-following.",
-                    strategy: "Influencer partnerships with micro-creators (10k-50k followers) for authentic reach, combined with user-generated content campaigns that turn customers into brand ambassadors."
-                },
-                tech: {
-                    tagline: "Tomorrow's Tech, Today's Impact",
-                    copy: "Innovation that simplifies complexity. Our campaign positions cutting-edge technology as an accessible solution to real-world challenges, making the future feel attainable and exciting.",
-                    visual: "Clean, futuristic interfaces with holographic UI elements and sleek product shots. Use blue and purple gradients with sharp geometric shapes to convey sophistication and innovation.",
-                    insight: "B2B tech buyers consume an average of 13 pieces of content before making a purchase decision, with case studies and demo videos being the most influential.",
-                    strategy: "LinkedIn thought leadership combined with interactive product demos and webinar series. Retargeting campaigns featuring customer success stories to nurture leads through the funnel."
-                },
-                gaming: {
-                    tagline: "Level Up Your Reality",
-                    copy: "Where gamers become legends. Our campaign taps into the competitive spirit and community bonds that define gaming culture, creating immersive experiences that blur the line between play and lifestyle.",
-                    visual: "High-energy action shots with neon accents and cyberpunk aesthetics. Feature gameplay footage integrated with real-world settings, showing gaming as a bridge between digital and physical worlds.",
-                    insight: "Gaming audiences engage 4x more with content that features community achievements and player stories rather than corporate messaging or pure product features.",
-                    strategy: "Twitch partnerships with live tournament sponsorships, Discord community building, and user-generated content challenges that reward creativity with in-game items or exclusive access."
-                },
-                food: {
-                    tagline: "Flavor Without Compromise",
-                    copy: "Delicious meets nutritious in every bite. Our campaign celebrates food that doesn't sacrifice taste for health, connecting with consumers who want to feel good about what they eat without giving up joy.",
-                    visual: "Vibrant, overhead food photography with rich textures and natural lighting. Show fresh ingredients in motion—splashing, steaming, and sizzling—to evoke sensory experiences.",
-                    insight: "Food content with transparent ingredient sourcing and preparation process receives 82% higher engagement than polished final product shots alone.",
-                    strategy: "Recipe-focused content on Pinterest and Instagram, with YouTube cooking tutorials that demonstrate versatility. Partner with nutritionists for credibility and food bloggers for reach."
-                }
-            };
+        async function generateAiCampaign(industry) {
+            try {
+                // Call the Vercel serverless function
+                const response = await fetch('/api/generate-campaign', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ industry })
+                });
 
-            return campaigns[industry.toLowerCase()] || null;
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    console.error('API Error:', errorData);
+                    throw new Error(errorData.error || 'Failed to generate campaign');
+                }
+
+                const data = await response.json();
+
+                if (data.success && data.campaign) {
+                    return data.campaign;
+                } else {
+                    throw new Error('Invalid response format');
+                }
+            } catch (error) {
+                console.error('Campaign generation error:', error);
+                // Return fallback campaign for demo purposes
+                return {
+                    tagline: "AI-Powered Marketing Excellence",
+                    copy: "We're experiencing high demand. Please try again in a moment, or contact us directly for immediate assistance with your marketing needs.",
+                    visual: "Professional, modern design showcasing innovation and reliability through clean lines and bold typography.",
+                    insight: "Businesses using AI-powered marketing see 2.5x higher engagement rates compared to traditional approaches.",
+                    strategy: "Multi-channel approach combining digital advertising, content marketing, and strategic partnerships."
+                };
+            }
         }
 
         // Generate button handler
-        document.getElementById('generateBtn').addEventListener('click', function() {
+        document.getElementById('generateBtn').addEventListener('click', async function() {
             const input = document.getElementById('industryInput').value.trim();
 
             if (!input) {
@@ -724,12 +719,13 @@
 
             // Show generating state
             const btnText = document.getElementById('generateBtnText');
-            btnText.textContent = 'Generating...';
+            const originalText = btnText.textContent;
+            btnText.textContent = 'Generating with AI...';
             this.disabled = true;
 
-            // Simulate generation delay
-            setTimeout(() => {
-                const campaign = generateAiCampaign(input);
+            try {
+                // Call the async AI function
+                const campaign = await generateAiCampaign(input);
 
                 if (campaign) {
                     state.aiOutput = campaign;
@@ -760,14 +756,18 @@
                         resultsSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }, 100);
                 } else {
-                    alert('Industry not found. Try: coffee, fashion, tech, gaming, or food');
+                    alert('Failed to generate campaign. Please try again.');
                     state.isGenerating = false;
                 }
-
+            } catch (error) {
+                console.error('Error in button handler:', error);
+                alert('An error occurred. Please try again.');
+                state.isGenerating = false;
+            } finally {
                 // Reset button
-                btnText.textContent = 'Generate Campaign';
+                btnText.textContent = originalText;
                 this.disabled = false;
-            }, 1000);
+            }
         });
 
         // Allow Enter key to trigger generation
@@ -803,9 +803,21 @@
         });
 
         // ========================================
+        // CONSULTATION BUTTON HANDLER
+        // ========================================
+        document.getElementById('consultationBtn').addEventListener('click', function() {
+            // Create a contact form modal or mailto link
+            const email = 'hello@t9.com'; // Replace with actual email
+            const subject = 'Free Strategy Consultation Request';
+            const body = 'Hi T9 Team,%0D%0A%0D%0AI would like to schedule a free strategy consultation.%0D%0A%0D%0AName: %0D%0ACompany: %0D%0AIndustry: %0D%0ABest time to contact: %0D%0A%0D%0AThank you!';
+
+            window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+        });
+
+        // ========================================
         // CONSOLE LOG - NO ERRORS
         // ========================================
-        console.log('T9ONLINE initialized successfully');
+        console.log('T9 initialized successfully');
         console.log('State management active:', state);
         console.log('Canvas animation running');
         console.log('All fonts loaded from Google Fonts CDN');
